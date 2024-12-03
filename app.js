@@ -56,8 +56,10 @@ alert('Boas vindas ao nosso site!');
 // let valorInserido = prompt('Insira um valor numérico');
 // let valorPontuacao = valorInserido / 3;
 // if(valorPontuacao >= 100){
+//     console.log('Parabéns, você venceu!');
 //     alert('Parabéns, você venceu!');
 // }else{
+//     console.log('Tente novamente para ganhar.');
 //     alert('Tente novamente para ganhar.');
 // }
 
