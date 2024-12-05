@@ -20,7 +20,7 @@ alert('Erro! Preencha todos os campos');
 
 // 07 - Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos" Agora exiba um alerta com o valor da variável mensagemDeErro.
 let mensagemDeErro = 'Erro! Preencha todos os campos';
-alert(mensagemDeErro)
+alert(mensagemDeErro);
 
 // 08 - Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
 nome = prompt('Qual seu nome');
@@ -30,7 +30,7 @@ idade = prompt('Qual sua idade?');
 
 // 10 - Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
 if(idade >=18){
-    alert('Pode tirar a habilitação!')
+    alert('Pode tirar a habilitação!');
 }
 
 // Desafios 02
@@ -70,5 +70,40 @@ let saldoDaConta = valorSaldo * 0.15;
 alert(`Seu saldo da conta após o investimento é ${saldoDaConta} dólares.`);
 
 // 05 - Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.
-let userName = prompt('Olá, informe seu nome:')
-alert(`Seja bem vindo a nossa plataforma de investimentos ${userName}.`)
+let userName = prompt('Olá, informe seu nome:');
+alert(`Seja bem vindo a nossa plataforma de investimentos ${userName}.`);
+
+// Desafios 03
+
+// 01 - Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
+let contadorUm = 1;
+
+while(contadorUm <= 10 ) {
+    alert(contadorUm);
+    contadorUm++;
+}
+
+// 02 - Crie um contador que começa em 10 e vá até 0 usando um loop while. Mostre cada número.
+let contadorDois = 10;
+
+while(contadorDois >= 0 ) {
+    alert(contadorDois);
+    contadorDois--;
+}
+
+// 03 - Crie um programa de contagem regressiva. Peça um número e conte deste número até 0, usando um loop while no console do navegador.
+let contadorTres = prompt("Digite um número para contagem regressiva até zero:");
+
+while(contadorTres >= 0 ) {
+    console.log(contadorTres);
+    contadorTres--;
+}
+
+// 04 - Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.
+let numeroEntrada = prompt("Digite um número para contagem PROGRESSIVA a partir de 0:");
+let contadorQuatro = 0;
+
+while(contadorQuatro <= numeroEntrada) {
+    console.log(contadorQuatro);
+    contadorQuatro++;
+}
