@@ -179,3 +179,52 @@ console.log(numeroAleatorio2);
 // 13 - Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
 let numeroAleatorio3 = parseInt(Math.random() * 1000) + 1;
 console.log(numeroAleatorio3);
+
+// Desafios do Segundo Módulo de lógica com Javascript
+
+// Desafios
+// 01 - Criar uma função que exibe "Olá, mundo!" no console.
+function olaMundo() {
+    console.log('Olá, Mundo!');
+}
+olaMundo();
+
+// 02 - Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+let nome3 = prompt('Digite seu nome:');
+function bemVindo(nome) {
+    console.log(`Olá, ${nome}!`);
+}
+bemVindo(nome3);
+
+// 03 - Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+let numeroInput = prompt('Digite um valor:');
+let numeroDobrado = dobraValor(numeroInput);
+console.log(`O dobro de ${numeroInput} é ${numeroDobrado}`);
+function dobraValor(numeroInput) { 
+    return parseInt(numeroInput * 2);
+}
+
+// 04 - Criar uma função que recebe três números como parâmetros e retorna a média deles.
+let input1 = parseInt(prompt('Digite o primeiro valor:'));
+let input2 = parseInt(prompt('Digite o segundo valor:'));
+let input3 = parseInt(prompt('Digite o terceiro valor:'));
+let media = calculaMedia(input1, input2, input3);
+alert(`A média dos valores inseridos é ${media}`)
+function calculaMedia(input1, input2, input3) {
+    return (input1 + input2 + input3) / 3;
+}
+
+// 05 - Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+let primeiroValor = parseInt(prompt('Digite o primeiro valor:'));
+let segundoValor = parseInt(prompt('Digite o segundo valor:'));
+let maiorValor = alert(`O maior número é ${maiorNumero(primeiroValor, segundoValor)}`);
+function maiorNumero(primeiroValor, segundoValor) {
+    return primeiroValor > segundoValor ? primeiroValor : segundoValor;
+}
+
+// 06 - Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+let num = parseInt(prompt('Digite um valor:'));
+let numMultiplicado = alert(`${num} vezes ${num} é igual a ${multiplicaNum(num)}`);
+function multiplicaNum(num){
+    return num * num;
+}
